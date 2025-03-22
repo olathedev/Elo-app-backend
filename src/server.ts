@@ -1,7 +1,6 @@
 import { createServer } from 'http';
 import app from './app';
 import dotenv from 'dotenv';
-
 dotenv.config();
 
 const port = process.env.PORT || 3000;
@@ -21,7 +20,6 @@ const startServer = async () => {
         process.exit(1);
       });
     });
-    
   } catch (error) {
     console.log('Error starting server:', error);
     process.exit(1);
